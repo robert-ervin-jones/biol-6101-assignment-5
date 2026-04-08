@@ -1,7 +1,7 @@
 # Assignment 5: Phylogenetic Analysis Pipeline
 
 ## Overview
-In this assignment, you will build a **Snakemake workflow** for phylogenetic analysis. You will start with a set of homologous gene sequences, perform multiple sequence alignment, and construct phylogenetic trees using two different approaches: the **species coalescent method** and the **supermatrix (concatenation) method**. You will assess tree support through bootstrap analysis, compare the results from both approaches, and visualize your findings. This assignment combines computational phylogenetics with reproducible workflow development and critical evaluation of phylogenetic methods.
+In this assignment, you will build a **Snakemake workflow** for phylogenetic analysis. You will start with a set of homologous gene sequences, perform multiple sequence alignment, trim and filter the alignments, and construct phylogenetic trees using two different approaches: the **species coalescent method** and the **supermatrix (concatenation) method**. You will assess tree support through bootstrap analysis, compare the results from both approaches, and visualize your findings. This assignment combines computational phylogenetics with reproducible workflow development and critical evaluation of phylogenetic methods.
 
 ## Learning Objectives
 By completing this assignment, you will:
