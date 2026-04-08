@@ -6,6 +6,7 @@ In this assignment, you will build a **Snakemake workflow** for phylogenetic ana
 ## Learning Objectives
 By completing this assignment, you will:
 - Perform multiple sequence alignment on homologous sequences
+- Trim and filter alignments
 - Construct phylogenetic trees using maximum likelihood methods
 - Compare species coalescent vs. supermatrix approaches to phylogeny
 - Understand the assumptions and limitations of each phylogenetic method
