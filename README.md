@@ -100,27 +100,30 @@ Implement Snakemake rules to:
 
 **Note:** Different genes may have different evolutionary models.
 
-### Task 3a: Maximum Likelihood Phylogeny - Species Coalescent Approach
+### Task 3: Phylogenetic Tree Inference
+Build phylogenetic trees using two approaches to compare methodological assumptions and results.
+
+#### Task 3a: Species Coalescent Approach
 Implement Snakemake rules to:
 1. Construct ML trees for each gene independently using **IQ-TREE**
 2. Perform bootstrap analysis (100 real bootstrap replicates)
 3. Generate trees with bootstrap support values for each gene
 4. Estimate a species tree from individual gene trees using a coalescent-based method (e.g., **ASTRAL**)
 
-#### Expected outputs:
+##### Expected outputs:
 - `results/trees/individual/{gene}.treefile` (best ML tree per gene)
 - `results/trees/individual/{gene}.contree` (consensus tree with bootstrap support)
 - `results/trees/individual/{gene}.log` (log file with likelihood scores)
 - `results/trees/coalescent/species_tree.treefile` (coalescent-based species tree)
 
-### Task 3b: Maximum Likelihood Phylogeny - Supermatrix Approach
+#### Task 3b: Supermatrix Approach
 Implement Snakemake rules to:
 1. Concatenate alignments from multiple genes into a supermatrix
 2. Create a partition file defining gene boundaries
 3. Construct a phylogenetic tree from the concatenated alignment using **IQ-TREE**
 4. Perform bootstrap analysis on the concatenated alignment
 
-#### Expected outputs:
+##### Expected outputs:
 - `results/concatenated/concatenated.aln` (supermatrix alignment)
 - `results/concatenated/partition_info.txt` (partition boundaries for each gene)
 - `results/trees/concatenated/concatenated.treefile` (ML tree from supermatrix; name may vary based on tool)
